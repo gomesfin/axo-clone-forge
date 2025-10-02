@@ -6,7 +6,7 @@ export const Hero = () => {
     <section className="relative min-h-screen overflow-hidden pt-32 pb-12" style={{ backgroundColor: '#E6E6FA' }}>
       <InteractiveBackground />
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <div className="max-w-2xl space-y-6">
+        <div className="max-w-2xl space-y-6 mt-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
             IT Consultancy
           </h1>
