@@ -7,13 +7,13 @@ export const Footer = () => {
             © {new Date().getFullYear()} AXO. All rights reserved.
           </div>
           <nav className="flex gap-6">
-            <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#services" className="text-sm font-medium text-muted-foreground hover:text-primary transition-all duration-300 cursor-pointer hover:scale-110">
               Services
             </a>
-            <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-primary transition-all duration-300 cursor-pointer hover:scale-110">
               About
             </a>
-            <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-primary transition-all duration-300 cursor-pointer hover:scale-110">
               Contact
             </a>
           </nav>

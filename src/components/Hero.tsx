@@ -20,8 +20,8 @@ export const Hero = () => {
             also restructuring your I.T. system to ensure that everything runs as smoothly as possible, 
             so you can focus on what really matters to you.
           </p>
-          <div className="pt-4">
-            <Button variant="hero" size="lg" asChild>
+          <div className="pt-6">
+            <Button variant="hero" size="lg" asChild className="text-lg px-10 py-6 cursor-pointer">
               <a href="#contact">Get In Touch</a>
             </Button>
           </div>

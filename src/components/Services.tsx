@@ -39,16 +39,16 @@ export const Services = () => {
             return (
               <Card
                 key={index}
-                className="p-6 bg-gradient-card border-border hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
+                className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer"
               >
                 <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="p-4 bg-primary/10 rounded-full">
-                    <Icon className="w-8 h-8 text-primary" />
+                  <div className="p-4 bg-primary/10 rounded-full group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <Icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
                     {service.description}
                   </p>
                 </div>

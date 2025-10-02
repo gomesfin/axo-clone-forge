@@ -51,10 +51,13 @@ export default {
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
+        'gradient-button': 'var(--gradient-button)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'hover': 'var(--shadow-hover)',
+        'active': 'var(--shadow-active)',
+        'glow': 'var(--glow-primary)',
       },
       borderRadius: {
         lg: "var(--radius)",
