@@ -6,7 +6,7 @@ export const Header = () => {
       <div className="container mx-auto bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border border-border/50 rounded-2xl shadow-hover">
         <div className="px-6 py-4 flex items-center justify-between">
           <div className="flex flex-col gap-0.5 items-center">
-            <div className="text-4xl font-bold cursor-pointer hover:opacity-80 transition-opacity" style={{ color: '#5e3ca0' }}>
+            <div className="text-4xl font-bold cursor-pointer hover:opacity-80 transition-opacity" style={{ color: '#003f6a' }}>
               Insights
             </div>
             <div className="text-xl font-semibold tracking-wide font-afacad-flux" style={{ color: '#003f6a' }}>
@@ -14,10 +14,10 @@ export const Header = () => {
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#services" className="text-base font-semibold text-black hover:opacity-70 transition-all duration-300 cursor-pointer">
+            <a href="#services" className="text-base font-semibold hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               Services
             </a>
-            <a href="#about" className="text-base font-semibold text-black hover:opacity-70 transition-all duration-300 cursor-pointer">
+            <a href="#about" className="text-base font-semibold hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               About
             </a>
             <Button 

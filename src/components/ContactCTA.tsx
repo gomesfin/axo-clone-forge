@@ -5,10 +5,10 @@ export const ContactCTA = () => {
     <section id="contact" className="py-20" style={{ backgroundColor: '#E6E6FA' }}>
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold" style={{ color: '#003f6a' }}>
             Ready to Transform Your IT Infrastructure?
           </h2>
-          <p className="text-lg text-foreground/80">
+          <p className="text-lg" style={{ color: '#003f6a' }}>
             Let's discuss how we can help your business thrive with our IT consultancy services.
           </p>
           <Button 

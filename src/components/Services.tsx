@@ -29,7 +29,7 @@ export const Services = () => {
     <section id="services" className="py-20" style={{ backgroundColor: '#E6E6FA' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#003f6a' }}>
             Our services for IT Consultancy solutions include:
           </h2>
         </div>
@@ -45,10 +45,10 @@ export const Services = () => {
                   <div className="p-4 bg-primary/10 rounded-full group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                     <Icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300" style={{ color: '#003f6a' }}>
                     {service.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                  <p className="text-sm transition-colors duration-300" style={{ color: '#003f6a' }}>
                     {service.description}
                   </p>
                 </div>
