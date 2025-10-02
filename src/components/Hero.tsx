@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { InteractiveBackground } from "@/components/InteractiveBackground";
 
 export const Hero = () => {
   return (
-    <section className="bg-gradient-hero py-20 md:py-32">
-      <div className="container mx-auto px-4">
+    <section className="relative bg-gradient-hero py-20 md:py-32 overflow-hidden">
+      <InteractiveBackground />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
             IT Consultancy
