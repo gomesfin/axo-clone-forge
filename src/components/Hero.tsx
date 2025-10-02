@@ -3,7 +3,7 @@ import { InteractiveBackground } from "@/components/InteractiveBackground";
 
 export const Hero = () => {
   return (
-    <section className="relative bg-gradient-hero min-h-screen overflow-hidden pt-32 pb-12">
+    <section className="relative min-h-screen overflow-hidden pt-32 pb-12" style={{ backgroundColor: '#E6E6FA' }}>
       <InteractiveBackground />
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-2xl space-y-6">
