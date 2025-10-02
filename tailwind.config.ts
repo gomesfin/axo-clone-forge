@@ -19,6 +19,7 @@ export default {
         'alegreya': ['Alegreya', 'serif'],
         'alegreya-sans-sc': ['Alegreya Sans SC', 'sans-serif'],
         'libre-baskerville': ['Libre Baskerville', 'serif'],
+        'antic-didone': ['Antic Didone', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
