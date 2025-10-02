@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   return (
-    <header className="sticky top-4 z-50 px-4">
+    <header className="fixed top-4 left-0 right-0 z-50 px-4">
       <div className="container mx-auto bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border border-border/50 rounded-2xl shadow-hover">
         <div className="px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
