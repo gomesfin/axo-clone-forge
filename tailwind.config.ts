@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'advent-pro': ['Advent Pro', 'sans-serif'],
+        'afacad-flux': ['Afacad Flux', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
