@@ -39,8 +39,8 @@ export const InteractiveBackground = () => {
       y: Math.random() * canvas.height,
       baseX: Math.random() * canvas.width,
       baseY: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.15,
-      vy: (Math.random() - 0.5) * 0.15,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
       size: Math.random() * 2.5 + 1.5,
       opacity: Math.random() * 0.4 + 0.7,
     }));
@@ -56,13 +56,15 @@ export const InteractiveBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particles.current.forEach((particle, i) => {
-        // Add slow, fluid autonomous movement using wave patterns
-        const time = Date.now() * 0.0004;
-        const randomForceX = Math.sin(time + i * 0.8) * 0.015;
-        const randomForceY = Math.cos(time + i * 1.2) * 0.015;
+        // Constant fluid movement with layered wave patterns
+        const time = Date.now() * 0.0006;
+        const wave1X = Math.sin(time + i * 0.5) * 0.025;
+        const wave1Y = Math.cos(time + i * 0.7) * 0.025;
+        const wave2X = Math.sin(time * 0.7 + i * 1.3) * 0.02;
+        const wave2Y = Math.cos(time * 0.7 + i * 0.9) * 0.02;
         
-        particle.vx += randomForceX;
-        particle.vy += randomForceY;
+        particle.vx += wave1X + wave2X;
+        particle.vy += wave1Y + wave2Y;
 
         // Calculate distance from mouse
         const dx = mouse.current.x - particle.x;
@@ -74,20 +76,20 @@ export const InteractiveBackground = () => {
         if (distance < maxDistance) {
           const force = (maxDistance - distance) / maxDistance;
           const angle = Math.atan2(dy, dx);
-          particle.vx -= Math.cos(angle) * force * 0.3;
-          particle.vy -= Math.sin(angle) * force * 0.3;
+          particle.vx -= Math.cos(angle) * force * 0.4;
+          particle.vy -= Math.sin(angle) * force * 0.4;
         }
 
-        // Gentle pull back to base position
-        particle.vx += (particle.baseX - particle.x) * 0.004;
-        particle.vy += (particle.baseY - particle.y) * 0.004;
+        // Very gentle pull back to base position (allow free flowing)
+        particle.vx += (particle.baseX - particle.x) * 0.002;
+        particle.vy += (particle.baseY - particle.y) * 0.002;
 
-        // Apply velocity with smooth damping
-        particle.vx *= 0.97;
-        particle.vy *= 0.97;
+        // Minimal damping for constant motion
+        particle.vx *= 0.98;
+        particle.vy *= 0.98;
 
-        // Cap maximum velocity for smooth, controlled movement
-        const maxVelocity = 0.7;
+        // Cap maximum velocity for smooth, controlled flow
+        const maxVelocity = 1.0;
         const currentSpeed = Math.sqrt(particle.vx * particle.vx + particle.vy * particle.vy);
         if (currentSpeed > maxVelocity) {
           particle.vx = (particle.vx / currentSpeed) * maxVelocity;
@@ -97,12 +99,12 @@ export const InteractiveBackground = () => {
         particle.x += particle.vx;
         particle.y += particle.vy;
 
-        // Allow particles to drift further from base
+        // Allow particles to drift in a wider range
         const distanceFromBase = Math.sqrt(
           Math.pow(particle.x - particle.baseX, 2) + 
           Math.pow(particle.y - particle.baseY, 2)
         );
-        const maxDrift = 80;
+        const maxDrift = 120;
         if (distanceFromBase > maxDrift) {
           const angle = Math.atan2(particle.baseY - particle.y, particle.baseX - particle.x);
           particle.x = particle.baseX - Math.cos(angle) * maxDrift;
