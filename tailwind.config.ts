@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         'afacad-flux': ['Afacad Flux', 'sans-serif'],
+        'albert-sans': ['Albert Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
