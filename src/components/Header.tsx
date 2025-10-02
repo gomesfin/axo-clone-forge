@@ -6,7 +6,7 @@ export const Header = () => {
       <div className="container mx-auto bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border border-border/50 rounded-2xl shadow-hover">
         <div className="px-6 py-4 flex items-center justify-between">
           <div className="flex flex-col gap-0.5 items-center">
-            <div className="text-2xl font-bold cursor-pointer hover:opacity-80 transition-opacity" style={{ color: '#6666e0' }}>
+            <div className="text-2xl font-bold cursor-pointer hover:opacity-80 transition-opacity" style={{ color: '#3D2768' }}>
               Insights
             </div>
             <div className="text-xs text-black font-medium tracking-wide">
