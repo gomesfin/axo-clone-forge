@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'adamina': ['Adamina', 'serif'],
+        'advent-pro': ['Advent Pro', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
