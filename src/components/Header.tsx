@@ -5,9 +5,12 @@ export const Header = () => {
     <header className="fixed top-4 left-0 right-0 z-50 px-4">
       <div className="container mx-auto bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border border-border/50 rounded-2xl shadow-hover">
         <div className="px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-col gap-0.5">
             <div className="text-2xl font-bold text-primary cursor-pointer hover:opacity-80 transition-opacity">
-              AXO
+              Insights
+            </div>
+            <div className="text-xs text-foreground/60 font-medium tracking-wide">
+              Evidence. Strategy. Impact.
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6">
