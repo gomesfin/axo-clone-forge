@@ -11,7 +11,13 @@ export const ContactCTA = () => {
           <p className="text-lg text-foreground/80">
             Let's discuss how we can help your business thrive with our IT consultancy services.
           </p>
-          <Button variant="hero" size="lg" asChild className="text-lg px-10 py-6 cursor-pointer">
+          <Button 
+            variant="hero" 
+            size="lg" 
+            asChild 
+            className="text-lg px-10 py-6 cursor-pointer"
+            style={{ backgroundImage: 'none', backgroundColor: '#E6E6FA', color: '#000000' }}
+          >
             <a href="mailto:contact@axo.mt">Get In Touch</a>
           </Button>
         </div>
