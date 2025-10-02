@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { InteractiveBackground } from "@/components/InteractiveBackground";
+import { Card } from "@/components/ui/card";
 
 export const Hero = () => {
   return (
@@ -10,6 +11,10 @@ export const Hero = () => {
           <p className="text-3xl md:text-4xl lg:text-5xl leading-relaxed font-antic-didone" style={{ color: '#003f6a' }}>
             Sharing timely insights in health economics, research methods, and multicultural education—building toward a global consultancy platform.
           </p>
+        </div>
+        
+        <div className="mt-16">
+          <Card className="group p-4 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer h-32" />
         </div>
       </div>
     </section>
