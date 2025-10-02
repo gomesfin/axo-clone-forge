@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         'afacad-flux': ['Afacad Flux', 'sans-serif'],
         'albert-sans': ['Albert Sans', 'sans-serif'],
+        'alegreya': ['Alegreya', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
