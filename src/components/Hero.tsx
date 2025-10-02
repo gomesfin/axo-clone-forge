@@ -3,10 +3,10 @@ import { InteractiveBackground } from "@/components/InteractiveBackground";
 
 export const Hero = () => {
   return (
-    <section className="relative bg-gradient-hero py-20 md:py-32 overflow-hidden">
+    <section className="relative bg-gradient-hero py-12 md:py-16 min-h-screen overflow-hidden">
       <InteractiveBackground />
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl space-y-6">
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
+        <div className="max-w-2xl space-y-6 pt-8 md:pt-12">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
             IT Consultancy
           </h1>
