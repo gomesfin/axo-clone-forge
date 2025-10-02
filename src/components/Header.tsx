@@ -13,7 +13,7 @@ export const Header = () => {
               Evidence. Strategy. Impact.
             </div>
           </div>
-          <nav className="hidden md:flex items-center gap-6 -mr-3">
+          <nav className="hidden md:flex items-center gap-6 -mr-8">
             <a href="#services" className="text-base font-semibold hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               Services
             </a>
