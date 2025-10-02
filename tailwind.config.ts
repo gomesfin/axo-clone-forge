@@ -18,6 +18,7 @@ export default {
         'albert-sans': ['Albert Sans', 'sans-serif'],
         'alegreya': ['Alegreya', 'serif'],
         'alegreya-sans-sc': ['Alegreya Sans SC', 'sans-serif'],
+        'libre-baskerville': ['Libre Baskerville', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
