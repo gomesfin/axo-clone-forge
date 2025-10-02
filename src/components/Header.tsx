@@ -9,7 +9,7 @@ export const Header = () => {
             <div className="text-3xl font-bold cursor-pointer hover:opacity-80 transition-opacity" style={{ color: '#003f6a' }}>
               Insights
             </div>
-            <div className="text-lg font-semibold tracking-wide font-afacad-flux" style={{ color: '#003f6a' }}>
+            <div className="text-lg font-semibold tracking-wide font-afacad-flux" style={{ color: '#b30000' }}>
               Evidence. Strategy. Impact.
             </div>
           </div>
