@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'constantia': ['Constantia', 'Georgia', 'serif'],
+        'aboreto': ['Aboreto', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
