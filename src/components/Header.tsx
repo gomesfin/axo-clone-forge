@@ -5,7 +5,7 @@ export const Header = () => {
     <header className="fixed top-4 left-0 right-0 z-50 px-4">
       <div className="container mx-auto bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border border-border/50 rounded-2xl shadow-hover">
         <div className="px-5 py-1 flex items-center justify-between">
-          <div className="flex flex-col gap-0 items-center -ml-3">
+          <div className="flex flex-col gap-0 items-center -ml-8">
             <div className="text-3xl font-bold cursor-pointer hover:opacity-80 transition-opacity" style={{ color: '#003f6a' }}>
               Insights
             </div>
