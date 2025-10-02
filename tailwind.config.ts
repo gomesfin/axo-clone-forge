@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'aboreto': ['Aboreto', 'cursive'],
+        'adamina': ['Adamina', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
