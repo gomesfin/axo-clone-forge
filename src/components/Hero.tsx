@@ -14,7 +14,9 @@ export const Hero = () => {
         </div>
         
         <div className="mt-24">
-          <Card className="group p-4 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer h-32" />
+          <Card className="group p-4 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer h-32">
+            <h3 className="text-2xl font-bold" style={{ color: '#003f6a' }}>Featured Post</h3>
+          </Card>
         </div>
       </div>
     </section>
