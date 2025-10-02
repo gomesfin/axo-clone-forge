@@ -25,7 +25,7 @@ export const Header = () => {
               size="lg" 
               asChild 
               className="cursor-pointer" 
-              style={{ backgroundImage: 'none', backgroundColor: '#E6E6FA', color: '#000000' }}
+              style={{ backgroundImage: 'none', backgroundColor: '#E6E6FA', color: '#003f6a' }}
             >
               <a href="#contact">Get In Touch</a>
             </Button>

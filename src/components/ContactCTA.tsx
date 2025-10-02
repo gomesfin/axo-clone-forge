@@ -16,7 +16,7 @@ export const ContactCTA = () => {
             size="lg" 
             asChild 
             className="text-lg px-10 py-6 cursor-pointer"
-            style={{ backgroundImage: 'none', backgroundColor: '#E6E6FA', color: '#000000' }}
+            style={{ backgroundImage: 'none', backgroundColor: '#E6E6FA', color: '#003f6a' }}
           >
             <a href="mailto:contact@axo.mt">Get In Touch</a>
           </Button>
