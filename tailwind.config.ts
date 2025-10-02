@@ -17,6 +17,7 @@ export default {
         'afacad-flux': ['Afacad Flux', 'sans-serif'],
         'albert-sans': ['Albert Sans', 'sans-serif'],
         'alegreya': ['Alegreya', 'serif'],
+        'alegreya-sans-sc': ['Alegreya Sans SC', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
