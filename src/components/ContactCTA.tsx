@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const ContactCTA = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-hero">
+    <section id="contact" className="py-20" style={{ backgroundColor: '#E3DBC8' }}>
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">

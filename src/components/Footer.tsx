@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="border-t bg-muted/30 py-8">
+    <footer className="border-t py-8" style={{ backgroundColor: '#E3DBC8', borderColor: 'rgba(0,0,0,0.1)' }}>
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm text-muted-foreground">

@@ -26,7 +26,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-20" style={{ backgroundColor: '#E3DBC8' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
