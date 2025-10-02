@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { InteractiveBackground } from "@/components/InteractiveBackground";
 import { Card } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 export const Hero = () => {
   return (
@@ -15,7 +16,11 @@ export const Hero = () => {
         
         <div className="mt-24">
           <Card className="group p-4 pt-2 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer h-24 flex flex-col items-center justify-start">
-            <h3 className="text-2xl font-bold italic font-antic-didone" style={{ color: '#003f6a' }}>Featured Post</h3>
+            <div className="flex items-center gap-4 w-full justify-center">
+              <Separator className="w-16" style={{ backgroundColor: '#003f6a' }} />
+              <h3 className="text-2xl font-bold italic font-antic-didone whitespace-nowrap" style={{ color: '#003f6a' }}>Featured Post</h3>
+              <Separator className="w-16" style={{ backgroundColor: '#003f6a' }} />
+            </div>
             <p className="text-lg font-afacad-flux font-thin mt-2" style={{ color: '#003f6a' }}>Latest blog or case study</p>
           </Card>
         </div>
