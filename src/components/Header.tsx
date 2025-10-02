@@ -6,7 +6,7 @@ export const Header = () => {
       <div className="container mx-auto bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border border-border/50 rounded-2xl shadow-hover">
         <div className="px-6 py-4 flex items-center justify-between">
           <div className="flex flex-col gap-0.5">
-            <div className="text-2xl font-bold text-primary cursor-pointer hover:opacity-80 transition-opacity">
+            <div className="text-2xl font-bold text-black cursor-pointer hover:opacity-80 transition-opacity">
               Insights
             </div>
             <div className="text-xs text-black font-medium tracking-wide">
@@ -14,10 +14,10 @@ export const Header = () => {
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#services" className="text-base font-semibold text-foreground/70 hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full cursor-pointer">
+            <a href="#services" className="text-base font-semibold text-black hover:opacity-70 transition-all duration-300 cursor-pointer">
               Services
             </a>
-            <a href="#about" className="text-base font-semibold text-foreground/70 hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full cursor-pointer">
+            <a href="#about" className="text-base font-semibold text-black hover:opacity-70 transition-all duration-300 cursor-pointer">
               About
             </a>
             <Button 
