@@ -56,10 +56,10 @@ export const InteractiveBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particles.current.forEach((particle, i) => {
-        // Add subtle fluid movement
-        const time = Date.now() * 0.0003;
-        const randomForceX = Math.sin(time + i * 0.5) * 0.008;
-        const randomForceY = Math.cos(time + i * 0.7) * 0.008;
+        // Add slow, fluid autonomous movement using wave patterns
+        const time = Date.now() * 0.0004;
+        const randomForceX = Math.sin(time + i * 0.8) * 0.015;
+        const randomForceY = Math.cos(time + i * 1.2) * 0.015;
         
         particle.vx += randomForceX;
         particle.vy += randomForceY;
@@ -78,16 +78,16 @@ export const InteractiveBackground = () => {
           particle.vy -= Math.sin(angle) * force * 0.3;
         }
 
-        // Return to base position (stronger pull to keep particles calm)
-        particle.vx += (particle.baseX - particle.x) * 0.007;
-        particle.vy += (particle.baseY - particle.y) * 0.007;
+        // Gentle pull back to base position
+        particle.vx += (particle.baseX - particle.x) * 0.004;
+        particle.vy += (particle.baseY - particle.y) * 0.004;
 
-        // Apply velocity with damping
-        particle.vx *= 0.95;
-        particle.vy *= 0.95;
+        // Apply velocity with smooth damping
+        particle.vx *= 0.97;
+        particle.vy *= 0.97;
 
-        // Cap maximum velocity to prevent overly active particles
-        const maxVelocity = 0.6;
+        // Cap maximum velocity for smooth, controlled movement
+        const maxVelocity = 0.7;
         const currentSpeed = Math.sqrt(particle.vx * particle.vx + particle.vy * particle.vy);
         if (currentSpeed > maxVelocity) {
           particle.vx = (particle.vx / currentSpeed) * maxVelocity;
@@ -97,12 +97,12 @@ export const InteractiveBackground = () => {
         particle.x += particle.vx;
         particle.y += particle.vy;
 
-        // Keep particles from drifting too far from base position
+        // Allow particles to drift further from base
         const distanceFromBase = Math.sqrt(
           Math.pow(particle.x - particle.baseX, 2) + 
           Math.pow(particle.y - particle.baseY, 2)
         );
-        const maxDrift = 60;
+        const maxDrift = 80;
         if (distanceFromBase > maxDrift) {
           const angle = Math.atan2(particle.baseY - particle.y, particle.baseX - particle.x);
           particle.x = particle.baseX - Math.cos(angle) * maxDrift;
