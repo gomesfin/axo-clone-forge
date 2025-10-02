@@ -20,7 +20,13 @@ export const Header = () => {
             <a href="#about" className="text-base font-semibold text-foreground/70 hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full cursor-pointer">
               About
             </a>
-            <Button variant="hero" size="lg" asChild className="cursor-pointer !bg-white !text-black hover:!bg-white/90">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              asChild 
+              className="cursor-pointer" 
+              style={{ backgroundImage: 'none', backgroundColor: '#FFFFFF', color: '#000000' }}
+            >
               <a href="#contact">Get In Touch</a>
             </Button>
           </nav>
