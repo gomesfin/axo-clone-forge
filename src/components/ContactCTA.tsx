@@ -1,0 +1,21 @@
+import { Button } from "@/components/ui/button";
+
+export const ContactCTA = () => {
+  return (
+    <section id="contact" className="py-20 bg-gradient-hero">
+      <div className="container mx-auto px-4">
+        <div className="max-w-2xl mx-auto text-center space-y-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            Ready to Transform Your IT Infrastructure?
+          </h2>
+          <p className="text-lg text-foreground/80">
+            Let's discuss how we can help your business thrive with our IT consultancy services.
+          </p>
+          <Button variant="hero" size="lg" asChild>
+            <a href="mailto:contact@axo.mt">Get In Touch</a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
