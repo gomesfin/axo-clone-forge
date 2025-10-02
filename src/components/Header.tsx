@@ -17,10 +17,19 @@ export const Header = () => {
             <a href="#services" className="text-base font-semibold hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               Services
             </a>
+            <a href="#blog" className="text-base font-semibold hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
+              Blog
+            </a>
+            <a href="#resources" className="text-base font-semibold hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
+              Resources
+            </a>
+            <a href="#partners" className="text-base font-semibold hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
+              Partners
+            </a>
             <a href="#about" className="text-base font-semibold hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               About
             </a>
-            <Button 
+            <Button
               variant="hero" 
               size="lg" 
               asChild 
