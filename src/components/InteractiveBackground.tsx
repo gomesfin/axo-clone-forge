@@ -39,8 +39,8 @@ export const InteractiveBackground = () => {
       y: Math.random() * canvas.height,
       baseX: Math.random() * canvas.width,
       baseY: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 1.5,
-      vy: (Math.random() - 0.5) * 1.5,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
       size: Math.random() * 2.5 + 1.5,
       opacity: Math.random() * 0.4 + 0.7,
     }));
@@ -56,10 +56,10 @@ export const InteractiveBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particles.current.forEach((particle, i) => {
-        // Add continuous random fluid movement
-        const time = Date.now() * 0.001;
-        const randomForceX = Math.sin(time + i * 0.5) * 0.05;
-        const randomForceY = Math.cos(time + i * 0.7) * 0.05;
+        // Add very subtle random fluid movement
+        const time = Date.now() * 0.0003;
+        const randomForceX = Math.sin(time + i * 0.5) * 0.01;
+        const randomForceY = Math.cos(time + i * 0.7) * 0.01;
         
         particle.vx += randomForceX;
         particle.vy += randomForceY;
@@ -74,17 +74,17 @@ export const InteractiveBackground = () => {
         if (distance < maxDistance) {
           const force = (maxDistance - distance) / maxDistance;
           const angle = Math.atan2(dy, dx);
-          particle.vx -= Math.cos(angle) * force * 0.8;
-          particle.vy -= Math.sin(angle) * force * 0.8;
+          particle.vx -= Math.cos(angle) * force * 0.5;
+          particle.vy -= Math.sin(angle) * force * 0.5;
         }
 
         // Return to base position (gentle pull)
-        particle.vx += (particle.baseX - particle.x) * 0.005;
-        particle.vy += (particle.baseY - particle.y) * 0.005;
+        particle.vx += (particle.baseX - particle.x) * 0.003;
+        particle.vy += (particle.baseY - particle.y) * 0.003;
 
-        // Apply velocity with damping
-        particle.vx *= 0.98;
-        particle.vy *= 0.98;
+        // Apply velocity with stronger damping
+        particle.vx *= 0.96;
+        particle.vy *= 0.96;
 
         particle.x += particle.vx;
         particle.y += particle.vy;
