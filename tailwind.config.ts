@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'candara': ['Candara', 'Calibri', 'sans-serif'],
+        'constantia': ['Constantia', 'Georgia', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
