@@ -15,11 +15,6 @@ export const Hero = () => {
             One size does not fit all, that's why we assess your needs and come up with the best action 
             plan to help your business thrive.
           </p>
-          <div className="pt-6">
-            <Button variant="hero" size="lg" asChild className="text-lg px-10 py-6 cursor-pointer">
-              <a href="#contact">Get In Touch</a>
-            </Button>
-          </div>
         </div>
       </div>
     </section>
