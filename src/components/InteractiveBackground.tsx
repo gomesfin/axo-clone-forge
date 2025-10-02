@@ -39,8 +39,8 @@ export const InteractiveBackground = () => {
       y: Math.random() * canvas.height,
       baseX: Math.random() * canvas.width,
       baseY: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.3,
-      vy: (Math.random() - 0.5) * 0.3,
+      vx: (Math.random() - 0.5) * 0.1,
+      vy: (Math.random() - 0.5) * 0.1,
       size: Math.random() * 2.5 + 1.5,
       opacity: Math.random() * 0.4 + 0.7,
     }));
@@ -57,9 +57,9 @@ export const InteractiveBackground = () => {
 
       particles.current.forEach((particle, i) => {
         // Add very subtle random fluid movement
-        const time = Date.now() * 0.0003;
-        const randomForceX = Math.sin(time + i * 0.5) * 0.01;
-        const randomForceY = Math.cos(time + i * 0.7) * 0.01;
+        const time = Date.now() * 0.0002;
+        const randomForceX = Math.sin(time + i * 0.5) * 0.005;
+        const randomForceY = Math.cos(time + i * 0.7) * 0.005;
         
         particle.vx += randomForceX;
         particle.vy += randomForceY;
@@ -74,26 +74,40 @@ export const InteractiveBackground = () => {
         if (distance < maxDistance) {
           const force = (maxDistance - distance) / maxDistance;
           const angle = Math.atan2(dy, dx);
-          particle.vx -= Math.cos(angle) * force * 0.5;
-          particle.vy -= Math.sin(angle) * force * 0.5;
+          particle.vx -= Math.cos(angle) * force * 0.3;
+          particle.vy -= Math.sin(angle) * force * 0.3;
         }
 
-        // Return to base position (gentle pull)
-        particle.vx += (particle.baseX - particle.x) * 0.003;
-        particle.vy += (particle.baseY - particle.y) * 0.003;
+        // Return to base position (stronger pull to keep particles calm)
+        particle.vx += (particle.baseX - particle.x) * 0.008;
+        particle.vy += (particle.baseY - particle.y) * 0.008;
 
         // Apply velocity with stronger damping
-        particle.vx *= 0.96;
-        particle.vy *= 0.96;
+        particle.vx *= 0.94;
+        particle.vy *= 0.94;
+
+        // Cap maximum velocity to prevent overly active particles
+        const maxVelocity = 0.5;
+        const currentSpeed = Math.sqrt(particle.vx * particle.vx + particle.vy * particle.vy);
+        if (currentSpeed > maxVelocity) {
+          particle.vx = (particle.vx / currentSpeed) * maxVelocity;
+          particle.vy = (particle.vy / currentSpeed) * maxVelocity;
+        }
 
         particle.x += particle.vx;
         particle.y += particle.vy;
 
-        // Wrap around screen edges
-        if (particle.x < 0) particle.x = canvas.width;
-        if (particle.x > canvas.width) particle.x = 0;
-        if (particle.y < 0) particle.y = canvas.height;
-        if (particle.y > canvas.height) particle.y = 0;
+        // Keep particles from drifting too far from base position
+        const distanceFromBase = Math.sqrt(
+          Math.pow(particle.x - particle.baseX, 2) + 
+          Math.pow(particle.y - particle.baseY, 2)
+        );
+        const maxDrift = 50;
+        if (distanceFromBase > maxDrift) {
+          const angle = Math.atan2(particle.baseY - particle.y, particle.baseX - particle.x);
+          particle.x = particle.baseX - Math.cos(angle) * maxDrift;
+          particle.y = particle.baseY - Math.sin(angle) * maxDrift;
+        }
 
         // Draw particle with glow effect
         ctx.shadowBlur = 10;
