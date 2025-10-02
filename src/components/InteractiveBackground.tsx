@@ -33,14 +33,14 @@ export const InteractiveBackground = () => {
     window.addEventListener("resize", resizeCanvas);
 
     // Initialize particles
-    const particleCount = 80;
+    const particleCount = 60;
     particles.current = Array.from({ length: particleCount }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       baseX: Math.random() * canvas.width,
       baseY: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.1,
-      vy: (Math.random() - 0.5) * 0.1,
+      vx: (Math.random() - 0.5) * 0.15,
+      vy: (Math.random() - 0.5) * 0.15,
       size: Math.random() * 2.5 + 1.5,
       opacity: Math.random() * 0.4 + 0.7,
     }));
@@ -56,10 +56,10 @@ export const InteractiveBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particles.current.forEach((particle, i) => {
-        // Add very subtle random fluid movement
-        const time = Date.now() * 0.0002;
-        const randomForceX = Math.sin(time + i * 0.5) * 0.005;
-        const randomForceY = Math.cos(time + i * 0.7) * 0.005;
+        // Add subtle fluid movement
+        const time = Date.now() * 0.0003;
+        const randomForceX = Math.sin(time + i * 0.5) * 0.008;
+        const randomForceY = Math.cos(time + i * 0.7) * 0.008;
         
         particle.vx += randomForceX;
         particle.vy += randomForceY;
@@ -79,15 +79,15 @@ export const InteractiveBackground = () => {
         }
 
         // Return to base position (stronger pull to keep particles calm)
-        particle.vx += (particle.baseX - particle.x) * 0.008;
-        particle.vy += (particle.baseY - particle.y) * 0.008;
+        particle.vx += (particle.baseX - particle.x) * 0.007;
+        particle.vy += (particle.baseY - particle.y) * 0.007;
 
-        // Apply velocity with stronger damping
-        particle.vx *= 0.94;
-        particle.vy *= 0.94;
+        // Apply velocity with damping
+        particle.vx *= 0.95;
+        particle.vy *= 0.95;
 
         // Cap maximum velocity to prevent overly active particles
-        const maxVelocity = 0.5;
+        const maxVelocity = 0.6;
         const currentSpeed = Math.sqrt(particle.vx * particle.vx + particle.vy * particle.vy);
         if (currentSpeed > maxVelocity) {
           particle.vx = (particle.vx / currentSpeed) * maxVelocity;
@@ -102,7 +102,7 @@ export const InteractiveBackground = () => {
           Math.pow(particle.x - particle.baseX, 2) + 
           Math.pow(particle.y - particle.baseY, 2)
         );
-        const maxDrift = 50;
+        const maxDrift = 60;
         if (distanceFromBase > maxDrift) {
           const angle = Math.atan2(particle.baseY - particle.y, particle.baseX - particle.x);
           particle.x = particle.baseX - Math.cos(angle) * maxDrift;
@@ -124,11 +124,11 @@ export const InteractiveBackground = () => {
           const dy = particle.y - otherParticle.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 120) {
+          if (distance < 140) {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
-            const opacity = (1 - distance / 120) * 0.5;
+            const opacity = (1 - distance / 140) * 0.5;
             ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
             ctx.lineWidth = 1;
             ctx.stroke();
