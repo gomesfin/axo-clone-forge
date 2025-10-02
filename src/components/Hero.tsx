@@ -13,7 +13,7 @@ export const Hero = () => {
           </p>
         </div>
         
-        <div className="mt-16">
+        <div className="mt-24">
           <Card className="group p-4 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer h-32" />
         </div>
       </div>
