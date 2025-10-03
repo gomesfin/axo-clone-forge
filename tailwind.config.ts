@@ -22,10 +22,6 @@ export default {
         'antic-didone': ['Antic Didone', 'serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
         'abeezee': ['ABeeZee', 'sans-serif'],
-        'cormorant-garamond': ['Cormorant Garamond', 'serif'],
-        'cinzel': ['Cinzel', 'serif'],
-        'josefin-sans': ['Josefin Sans', 'sans-serif'],
-        'raleway': ['Raleway', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
