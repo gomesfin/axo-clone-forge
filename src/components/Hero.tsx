@@ -30,16 +30,16 @@ export const Hero = () => {
             Quick Links
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
-            <Card className="group px-4 py-6 bg-card/65 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none">
+            <Card className="group px-4 py-6 bg-card/65 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none max-w-[75%] mx-auto">
               <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Consulting Services</h4>
             </Card>
-            <Card className="group px-4 py-6 bg-card/65 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none">
+            <Card className="group px-4 py-6 bg-card/65 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none max-w-[75%] mx-auto">
               <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Teaching Resources</h4>
             </Card>
-            <Card className="group px-4 py-6 bg-card/65 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none">
+            <Card className="group px-4 py-6 bg-card/65 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none max-w-[75%] mx-auto">
               <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Partners</h4>
             </Card>
-            <Card className="group px-4 py-6 bg-card/65 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none">
+            <Card className="group px-4 py-6 bg-card/65 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none max-w-[75%] mx-auto">
               <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Contact</h4>
             </Card>
           </div>
