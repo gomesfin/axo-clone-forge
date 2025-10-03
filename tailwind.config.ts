@@ -23,6 +23,7 @@ export default {
         'montserrat': ['Montserrat', 'sans-serif'],
         'abeezee': ['ABeeZee', 'sans-serif'],
         'cormorant-garamond': ['Cormorant Garamond', 'serif'],
+        'cinzel': ['Cinzel', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
