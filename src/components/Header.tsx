@@ -12,19 +12,19 @@ export const Header = () => {
             className="h-16 cursor-pointer hover:opacity-80 transition-opacity -ml-8"
           />
           <nav className="hidden md:flex items-center gap-6 -mr-8">
-            <a href="#services" className="text-base hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
+            <a href="#services" className="text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               Services
             </a>
-            <a href="#blog" className="text-base hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
+            <a href="#blog" className="text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               Blog
             </a>
-            <a href="#resources" className="text-base hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
+            <a href="#resources" className="text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               Resources
             </a>
-            <a href="#partners" className="text-base hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
+            <a href="#partners" className="text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               Partners
             </a>
-            <a href="#about" className="text-base hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
+            <a href="#about" className="text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer" style={{ color: '#003f6a' }}>
               About
             </a>
             <Button
