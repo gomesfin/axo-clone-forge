@@ -23,6 +23,7 @@ export default {
         'montserrat': ['Montserrat', 'sans-serif'],
         'abeezee': ['ABeeZee', 'sans-serif'],
         'aboreto': ['Aboreto', 'cursive'],
+        'ovo': ['Ovo', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
