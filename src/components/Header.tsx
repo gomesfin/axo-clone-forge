@@ -31,7 +31,7 @@ export const Header = () => {
               variant="hero" 
               size="lg" 
               asChild 
-              className="cursor-pointer font-abeezee text-sm lg:text-base px-3 lg:px-6 py-2 lg:py-3" 
+              className="cursor-pointer font-abeezee text-base lg:text-lg px-3 lg:px-6 py-2 lg:py-3" 
               style={{ backgroundImage: 'none', backgroundColor: '#E6E6FA', color: '#003f6a' }}
             >
               <a href="#contact">Get In Touch</a>
