@@ -24,6 +24,7 @@ export default {
         'abeezee': ['ABeeZee', 'sans-serif'],
         'cormorant-garamond': ['Cormorant Garamond', 'serif'],
         'cinzel': ['Cinzel', 'serif'],
+        'josefin-sans': ['Josefin Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
