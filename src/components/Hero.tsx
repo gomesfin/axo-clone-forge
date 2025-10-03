@@ -25,7 +25,7 @@ export const Hero = () => {
           </Card>
         </div>
 
-        <div className="mt-28">
+        <div className="mt-44">
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-4 font-antic-didone" style={{ color: '#003f6a' }}>
             Quick Links
           </h3>
