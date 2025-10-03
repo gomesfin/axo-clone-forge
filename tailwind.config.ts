@@ -21,6 +21,7 @@ export default {
         'libre-baskerville': ['Libre Baskerville', 'serif'],
         'antic-didone': ['Antic Didone', 'serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
+        'abeezee': ['ABeeZee', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
