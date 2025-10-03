@@ -25,6 +25,7 @@ export default {
         'cormorant-garamond': ['Cormorant Garamond', 'serif'],
         'cinzel': ['Cinzel', 'serif'],
         'josefin-sans': ['Josefin Sans', 'sans-serif'],
+        'raleway': ['Raleway', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
