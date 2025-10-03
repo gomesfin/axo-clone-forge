@@ -20,6 +20,7 @@ export default {
         'alegreya-sans-sc': ['Alegreya Sans SC', 'sans-serif'],
         'libre-baskerville': ['Libre Baskerville', 'serif'],
         'antic-didone': ['Antic Didone', 'serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

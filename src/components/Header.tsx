@@ -33,7 +33,7 @@ export const Header = () => {
               variant="hero" 
               size="lg" 
               asChild 
-              className="cursor-pointer" 
+              className="cursor-pointer font-montserrat" 
               style={{ backgroundImage: 'none', backgroundColor: '#E6E6FA', color: '#003f6a' }}
             >
               <a href="#contact">Get In Touch</a>
