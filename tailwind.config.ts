@@ -22,6 +22,7 @@ export default {
         'antic-didone': ['Antic Didone', 'serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
         'abeezee': ['ABeeZee', 'sans-serif'],
+        'aboreto': ['Aboreto', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
