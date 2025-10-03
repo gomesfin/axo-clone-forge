@@ -24,6 +24,7 @@ export default {
         'abeezee': ['ABeeZee', 'sans-serif'],
         'aboreto': ['Aboreto', 'cursive'],
         'ovo': ['Ovo', 'serif'],
+        'cinzel': ['Cinzel', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
