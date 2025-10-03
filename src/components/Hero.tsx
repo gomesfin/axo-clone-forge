@@ -29,19 +29,21 @@ export const Hero = () => {
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 font-antic-didone" style={{ color: '#003f6a' }}>
             Quick Links
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Card className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center">
-              <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Consulting Services</h4>
-            </Card>
-            <Card className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center">
-              <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Teaching Resources</h4>
-            </Card>
-            <Card className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center">
-              <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Partners</h4>
-            </Card>
-            <Card className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center">
-              <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Contact</h4>
-            </Card>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-[70%]">
+              <Card className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center">
+                <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Consulting Services</h4>
+              </Card>
+              <Card className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center">
+                <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Teaching Resources</h4>
+              </Card>
+              <Card className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center">
+                <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Partners</h4>
+              </Card>
+              <Card className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center">
+                <h4 className="text-lg font-semibold text-center font-afacad-flux" style={{ color: '#003f6a' }}>Contact</h4>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
