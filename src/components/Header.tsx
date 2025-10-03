@@ -11,7 +11,7 @@ export const Header = () => {
             alt="Insights - Evidence. Strategy. Impact." 
             className="h-12 md:h-14 lg:h-16 cursor-pointer hover:opacity-80 transition-opacity -ml-2 md:-ml-8"
           />
-          <nav className="hidden md:flex items-center gap-3 lg:gap-6 -mr-2 md:-mr-8">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8 xl:gap-10 -mr-2 md:-mr-8">
             <a href="#services" className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" style={{ color: '#003f6a' }}>
               Services
             </a>
