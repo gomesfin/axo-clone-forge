@@ -1,8 +1,9 @@
 import { Card } from "@/components/ui/card";
-import { TrendingUp, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import BrainIcon from "@/assets/brain-icon.svg";
 import TacticIcon from "@/assets/tactic-icon.svg";
 import CoronavirusIcon from "@/assets/coronavirus-icon.svg";
+import StudyDesignIcon from "@/assets/study-design-icon.svg";
 
 const services = [
   {
@@ -17,7 +18,7 @@ const services = [
   },
   {
     title: "Study Design & Methods",
-    icon: TrendingUp,
+    icon: "studydesign",
     description: "Description",
   },
   {
@@ -57,6 +58,8 @@ export const Services = () => {
                       <img src={TacticIcon} alt="tactic" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
                     ) : Icon === "coronavirus" ? (
                       <img src={CoronavirusIcon} alt="coronavirus" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
+                    ) : Icon === "studydesign" ? (
+                      <img src={StudyDesignIcon} alt="study design" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
                     ) : (
                       <Icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
                     )}
