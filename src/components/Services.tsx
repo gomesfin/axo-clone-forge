@@ -6,27 +6,27 @@ const services = [
   {
     title: "HEOR & Real-World Evidence",
     icon: Lightbulb,
-    description: "Develop comprehensive IT strategies aligned with your business goals",
+    description: "Description",
   },
   {
     title: "Epidemiology Explained",
     icon: RefreshCw,
-    description: "Optimize and reorganize your IT infrastructure for maximum efficiency",
+    description: "Description",
   },
   {
     title: "Study Design & Methods",
     icon: TrendingUp,
-    description: "Expert guidance on technology roadmap and implementation",
+    description: "Description",
   },
   {
     title: "Visual Strategy & Slide Design",
     icon: Search,
-    description: "Identify and resolve technical challenges at their root",
+    description: "Description",
   },
   {
     title: "Advanced methods",
     icon: "brain",
-    description: "Advanced methodologies for complex analytical challenges",
+    description: "Description",
   },
 ];
 
@@ -58,7 +58,7 @@ export const Services = () => {
                   <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300" style={{ color: '#003f6a' }}>
                     {service.title}
                   </h3>
-                  <p className="text-sm transition-colors duration-300" style={{ color: '#003f6a' }}>
+                  <p className="text-base transition-colors duration-300" style={{ color: '#003f6a' }}>
                     {service.description}
                   </p>
                 </div>
