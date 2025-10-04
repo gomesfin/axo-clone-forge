@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { InteractiveBackground } from "@/components/InteractiveBackground";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import starIcon from "@/assets/star-icon.svg";
+import starIcon from "@/assets/star-shine-icon.svg";
 
 export const Hero = () => {
   return (
