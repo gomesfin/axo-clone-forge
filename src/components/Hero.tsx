@@ -28,11 +28,11 @@ export const Hero = () => {
 
         <div className="mt-44">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <img src={starIcon} alt="" className="w-8 h-8" style={{ filter: 'invert(18%) sepia(77%) saturate(1840%) hue-rotate(183deg) brightness(95%) contrast(101%)' }} />
+            <img src={starIcon} alt="" className="w-8 h-8" style={{ filter: 'brightness(0) saturate(100%) invert(14%) sepia(93%) saturate(2449%) hue-rotate(188deg) brightness(95%) contrast(101%)' }} />
             <h3 className="text-2xl md:text-3xl font-bold text-center font-aboreto" style={{ color: '#003f6a' }}>
               Quick Links
             </h3>
-            <img src={starIcon} alt="" className="w-8 h-8" style={{ filter: 'invert(18%) sepia(77%) saturate(1840%) hue-rotate(183deg) brightness(95%) contrast(101%)' }} />
+            <img src={starIcon} alt="" className="w-8 h-8" style={{ filter: 'brightness(0) saturate(100%) invert(14%) sepia(93%) saturate(2449%) hue-rotate(188deg) brightness(95%) contrast(101%)' }} />
           </div>
           <div className="flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 w-[50%]">
