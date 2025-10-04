@@ -37,22 +37,22 @@ export const Hero = () => {
           <div className="flex justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 w-[50%]">
               {/* All cards have consistent px-4 padding */}
-              <Card className="group py-8 px-4 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none">
+              <Card className="group py-8 px-4 bg-gradient-card bg-opacity-50 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none opacity-70">
                 <h4 className="text-xl font-bold text-center font-cinzel uppercase" style={{ color: '#003f6a' }}>
                   <span className="text-2xl">C</span>ONSULTING <span className="text-2xl">S</span>ERVICES
                 </h4>
               </Card>
-              <Card className="group py-8 px-4 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none">
+              <Card className="group py-8 px-4 bg-gradient-card bg-opacity-50 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none opacity-70">
                 <h4 className="text-xl font-bold text-center font-cinzel uppercase" style={{ color: '#003f6a' }}>
                   <span className="text-2xl">T</span>EACHING <span className="text-2xl">R</span>ESOURCES
                 </h4>
               </Card>
-              <Card className="group py-8 px-4 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none">
+              <Card className="group py-8 px-4 bg-gradient-card bg-opacity-50 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none opacity-70">
                 <h4 className="text-xl font-bold text-center font-cinzel uppercase" style={{ color: '#003f6a' }}>
                   <span className="text-2xl">P</span>ARTNERS
                 </h4>
               </Card>
-              <Card className="group py-8 px-4 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none">
+              <Card className="group py-8 px-4 bg-gradient-card bg-opacity-50 border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center rounded-none opacity-70">
                 <h4 className="text-xl font-bold text-center font-cinzel uppercase" style={{ color: '#003f6a' }}>
                   <span className="text-2xl">C</span>ONTACT
                 </h4>
