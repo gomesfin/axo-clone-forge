@@ -29,7 +29,7 @@ export const Hero = () => {
         <div className="mt-44">
           <div className="flex items-center justify-center gap-4 mb-4">
             <img src={starIcon} alt="" className="w-8 h-8" style={{ filter: 'brightness(0) saturate(100%) invert(100%)' }} />
-            <h3 className="font-bold text-center font-aboreto" style={{ color: '#003f6a', fontSize: '22.68px' }}>
+            <h3 className="font-bold text-center font-aboreto" style={{ color: '#003f6a', fontSize: '23.814px' }}>
               Quick Links
             </h3>
             <img src={starIcon} alt="" className="w-8 h-8" style={{ filter: 'brightness(0) saturate(100%) invert(100%)' }} />
