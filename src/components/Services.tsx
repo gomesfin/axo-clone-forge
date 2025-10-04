@@ -1,9 +1,9 @@
 import { Card } from "@/components/ui/card";
-import { Search } from "lucide-react";
 import BrainIcon from "@/assets/brain-icon.svg";
 import HeorIcon from "@/assets/heor-icon.svg";
 import EpidemiologyIcon from "@/assets/epidemiology-icon.svg";
 import StudyDesignIcon from "@/assets/study-design-icon.svg";
+import VisualStrategyIcon from "@/assets/visual-strategy-icon.svg";
 
 const services = [
   {
@@ -23,7 +23,7 @@ const services = [
   },
   {
     title: "Visual Strategy & Slide Design",
-    icon: Search,
+    icon: "visualstrategy",
     description: "Description",
   },
   {
@@ -61,7 +61,7 @@ export const Services = () => {
                     ) : Icon === "studydesign" ? (
                       <img src={StudyDesignIcon} alt="study design" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
                     ) : (
-                      <Icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+                      <img src={VisualStrategyIcon} alt="visual strategy" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
                     )}
                   </div>
                   <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300" style={{ color: '#003f6a' }}>
