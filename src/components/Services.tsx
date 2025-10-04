@@ -53,15 +53,15 @@ export const Services = () => {
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="p-4 bg-primary/10 rounded-full group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                     {Icon === "brain" ? (
-                      <img src={BrainIcon} alt="brain" className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
+                      <img src={BrainIcon} alt="brain" className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
                     ) : Icon === "heor" ? (
                       <img src={HeorIcon} alt="heor" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
                     ) : Icon === "epidemiology" ? (
-                      <img src={EpidemiologyIcon} alt="epidemiology" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
+                      <img src={EpidemiologyIcon} alt="epidemiology" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
                     ) : Icon === "studydesign" ? (
-                      <img src={StudyDesignIcon} alt="study design" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
+                      <img src={StudyDesignIcon} alt="study design" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
                     ) : (
-                      <img src={VisualStrategyIcon} alt="visual strategy" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
+                      <img src={VisualStrategyIcon} alt="visual strategy" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
                     )}
                   </div>
                   <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300" style={{ color: '#003f6a' }}>
