@@ -54,7 +54,7 @@ export const Services = () => {
                     {Icon === "brain" ? (
                       <img src={BrainIcon} alt="brain" className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
                     ) : Icon === "tactic" ? (
-                      <img src={TacticIcon} alt="tactic" className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
+                      <img src={TacticIcon} alt="tactic" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
                     ) : Icon === "coronavirus" ? (
                       <img src={CoronavirusIcon} alt="coronavirus" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
                     ) : (
