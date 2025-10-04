@@ -3,22 +3,22 @@ import { Lightbulb, RefreshCw, TrendingUp, Search } from "lucide-react";
 
 const services = [
   {
-    title: "I.T. Strategy Planning",
+    title: "HEOR & Real-World Evidence",
     icon: Lightbulb,
     description: "Develop comprehensive IT strategies aligned with your business goals",
   },
   {
-    title: "Restructuring",
+    title: "Epidemiology Explained",
     icon: RefreshCw,
     description: "Optimize and reorganize your IT infrastructure for maximum efficiency",
   },
   {
-    title: "Best steps to take forward",
+    title: "Study Design & Methods",
     icon: TrendingUp,
     description: "Expert guidance on technology roadmap and implementation",
   },
   {
-    title: "Locating the source of the issue",
+    title: "Visual Strategy & Slide Design",
     icon: Search,
     description: "Identify and resolve technical challenges at their root",
   },
@@ -29,8 +29,8 @@ export const Services = () => {
     <section id="services" className="py-20" style={{ backgroundColor: '#E6E6FA' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#003f6a' }}>
-            Our services for IT Consultancy solutions include:
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-aboreto" style={{ color: '#003f6a' }}>
+            BLOG
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
