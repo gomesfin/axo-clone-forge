@@ -1,11 +1,12 @@
 import { Card } from "@/components/ui/card";
-import { Lightbulb, RefreshCw, TrendingUp, Search } from "lucide-react";
+import { RefreshCw, TrendingUp, Search } from "lucide-react";
 import BrainIcon from "@/assets/brain-icon.svg";
+import TacticIcon from "@/assets/tactic-icon.svg";
 
 const services = [
   {
     title: "HEOR & Real-World Evidence",
-    icon: Lightbulb,
+    icon: "tactic",
     description: "Description",
   },
   {
@@ -51,6 +52,8 @@ export const Services = () => {
                   <div className="p-4 bg-primary/10 rounded-full group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                     {Icon === "brain" ? (
                       <img src={BrainIcon} alt="brain" className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
+                    ) : Icon === "tactic" ? (
+                      <img src={TacticIcon} alt="tactic" className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
                     ) : (
                       <Icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
                     )}
