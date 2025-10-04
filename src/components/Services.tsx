@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Search } from "lucide-react";
 import BrainIcon from "@/assets/brain-icon.svg";
 import HeorIcon from "@/assets/heor-icon.svg";
-import CoronavirusIcon from "@/assets/coronavirus-icon.svg";
+import EpidemiologyIcon from "@/assets/epidemiology-icon.svg";
 import StudyDesignIcon from "@/assets/study-design-icon.svg";
 
 const services = [
@@ -13,7 +13,7 @@ const services = [
   },
   {
     title: "Epidemiology Explained",
-    icon: "coronavirus",
+    icon: "epidemiology",
     description: "Description",
   },
   {
@@ -56,8 +56,8 @@ export const Services = () => {
                       <img src={BrainIcon} alt="brain" className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
                     ) : Icon === "heor" ? (
                       <img src={HeorIcon} alt="heor" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
-                    ) : Icon === "coronavirus" ? (
-                      <img src={CoronavirusIcon} alt="coronavirus" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
+                    ) : Icon === "epidemiology" ? (
+                      <img src={EpidemiologyIcon} alt="epidemiology" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
                     ) : Icon === "studydesign" ? (
                       <img src={StudyDesignIcon} alt="study design" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" style={{ filter: 'invert(29%) sepia(96%) saturate(1234%) hue-rotate(180deg) brightness(94%) contrast(101%)' }} />
                     ) : (
