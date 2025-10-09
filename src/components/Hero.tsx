@@ -6,7 +6,7 @@ import starIcon from "@/assets/star-shine-icon.svg";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden flex items-center justify-center bg-background">
+    <section className="relative min-h-screen overflow-hidden flex items-center justify-center" style={{ backgroundColor: '#1f1f1f' }}>
       <InteractiveBackground />
       <div className="container mx-auto px-4 md:px-8 relative z-10 pt-32">
         <div className="max-w-3xl mx-auto text-center">
