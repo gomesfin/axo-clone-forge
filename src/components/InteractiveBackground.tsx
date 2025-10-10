@@ -72,12 +72,12 @@ export const InteractiveBackground = () => {
         const distance = Math.sqrt(dx * dx + dy * dy);
         const maxDistance = 150;
 
-        // Mouse interaction - repel particles
+        // Mouse interaction - attract particles
         if (distance < maxDistance) {
           const force = (maxDistance - distance) / maxDistance;
           const angle = Math.atan2(dy, dx);
-          particle.vx -= Math.cos(angle) * force * 0.4;
-          particle.vy -= Math.sin(angle) * force * 0.4;
+          particle.vx += Math.cos(angle) * force * 0.4;
+          particle.vy += Math.sin(angle) * force * 0.4;
         }
 
         // Very gentle pull back to base position (allow free flowing)
