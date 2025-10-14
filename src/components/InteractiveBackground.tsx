@@ -132,7 +132,7 @@ export const InteractiveBackground = () => {
             ctx.lineTo(otherParticle.x, otherParticle.y);
             const opacity = (1 - distance / 140) * 0.5;
             ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
-            ctx.lineWidth = 1;
+            ctx.lineWidth = 2;
             ctx.stroke();
           }
         });
