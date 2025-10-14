@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Logo from "@/assets/Logo.png";
+import Logo from "@/assets/Logo-new.png";
 
 export const Header = () => {
   return (
