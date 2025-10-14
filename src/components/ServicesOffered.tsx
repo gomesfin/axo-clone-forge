@@ -26,7 +26,7 @@ export const ServicesOffered = () => {
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="h-[2px] w-16 md:w-24 bg-gradient-to-r from-transparent to-[#003f6a]"></div>
-            <h2 className="text-3xl md:text-4xl font-bold font-aboreto" style={{ color: '#003f6a' }}>
+            <h2 className="text-3xl md:text-4xl font-bold font-aboreto" style={{ color: 'black' }}>
               Services We Offer
             </h2>
             <div className="h-[2px] w-16 md:w-24 bg-gradient-to-l from-transparent to-[#003f6a]"></div>
@@ -39,10 +39,10 @@ export const ServicesOffered = () => {
               className="group p-4 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer"
             >
               <div className="flex flex-col items-center text-center space-y-4">
-                <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300" style={{ color: '#003f6a' }}>
+                <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300" style={{ color: 'black' }}>
                   {service.title}
                 </h3>
-                <p className="text-base transition-colors duration-300" style={{ color: '#003f6a' }}>
+                <p className="text-base transition-colors duration-300" style={{ color: 'black' }}>
                   {service.description}
                 </p>
               </div>

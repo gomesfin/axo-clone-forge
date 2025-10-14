@@ -5,10 +5,10 @@ export const ContactCTA = () => {
     <section id="contact" className="py-20" style={{ backgroundColor: '#E6E6FA' }}>
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold" style={{ color: '#003f6a' }}>
+          <h2 className="text-3xl md:text-4xl font-bold" style={{ color: 'black' }}>
             Ready to Transform Your IT Infrastructure?
           </h2>
-          <p className="text-lg" style={{ color: '#003f6a' }}>
+          <p className="text-lg" style={{ color: 'black' }}>
             Let's discuss how we can help your business thrive with our IT consultancy services.
           </p>
           <Button 
@@ -16,7 +16,7 @@ export const ContactCTA = () => {
             size="lg" 
             asChild 
             className="text-lg px-10 py-6 cursor-pointer font-abeezee"
-            style={{ backgroundImage: 'none', backgroundColor: '#E6E6FA', color: '#003f6a' }}
+            style={{ backgroundImage: 'none', backgroundColor: '#E6E6FA', color: 'black' }}
           >
             <a href="mailto:contact@axo.mt">Get In Touch</a>
           </Button>
