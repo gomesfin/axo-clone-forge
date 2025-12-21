@@ -12,19 +12,44 @@ export const Header = () => {
             className="h-12 md:h-14 lg:h-16 cursor-pointer hover:opacity-80 transition-opacity -ml-2 md:-ml-8"
           />
           <nav className="hidden md:flex items-center gap-6 lg:gap-8 xl:gap-10 -mr-2 md:-mr-8">
-            <a href="#services" className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" style={{ color: 'black' }}>
+            <a 
+              href="#services" 
+              onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" 
+              style={{ color: 'black' }}
+            >
               Services
             </a>
-            <a href="#blog" className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" style={{ color: 'black' }}>
+            <a 
+              href="#blog" 
+              onClick={(e) => { e.preventDefault(); document.getElementById('blog')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" 
+              style={{ color: 'black' }}
+            >
               Blog
             </a>
-            <a href="#resources" className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" style={{ color: 'black' }}>
+            <a 
+              href="#resources" 
+              onClick={(e) => { e.preventDefault(); document.getElementById('resources')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" 
+              style={{ color: 'black' }}
+            >
               Resources
             </a>
-            <a href="#partners" className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" style={{ color: 'black' }}>
+            <a 
+              href="#partners" 
+              onClick={(e) => { e.preventDefault(); document.getElementById('partners')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" 
+              style={{ color: 'black' }}
+            >
               Partners
             </a>
-            <a href="#about" className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" style={{ color: 'black' }}>
+            <a 
+              href="#about" 
+              onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="text-base lg:text-xl xl:text-2xl hover:opacity-70 transition-all duration-300 cursor-pointer whitespace-nowrap" 
+              style={{ color: 'black' }}
+            >
               About
             </a>
             <Button
