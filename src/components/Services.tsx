@@ -35,7 +35,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section id="services" className="pt-36 pb-20" style={{ backgroundColor: '#E6E6FA' }}>
+    <section id="services" className="pt-36 pb-20" style={{ backgroundColor: '#e8d9d9' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-4 mb-4">
