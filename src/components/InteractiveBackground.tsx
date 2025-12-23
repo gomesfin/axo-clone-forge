@@ -35,8 +35,8 @@ export const InteractiveBackground = () => {
         y: Math.random() * canvas.height,
         baseX: Math.random() * canvas.width,
         baseY: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.29,
-        vy: (Math.random() - 0.5) * 0.29,
+        vx: (Math.random() - 0.5) * 0.15,
+        vy: (Math.random() - 0.5) * 0.15,
         size: Math.random() * 1.5 + 1,
       }));
     };
@@ -55,9 +55,9 @@ export const InteractiveBackground = () => {
 
       particles.current.forEach((particle, i) => {
         // Smooth, slow sinusoidal movement
-        const time = Date.now() * 0.0006;
-        particle.vx += Math.sin(time + i * 0.5) * 0.016;
-        particle.vy += Math.cos(time + i * 0.3) * 0.016;
+        const time = Date.now() * 0.0003;
+        particle.vx += Math.sin(time + i * 0.5) * 0.008;
+        particle.vy += Math.cos(time + i * 0.3) * 0.008;
 
         // Subtle mouse interaction
         const dx = mouse.current.x - particle.x;
@@ -97,7 +97,7 @@ export const InteractiveBackground = () => {
         // Draw particle
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(0, 0, 216, 0.6)`;
+        ctx.fillStyle = `rgba(255, 255, 255, 0.6)`;
         ctx.fill();
 
         // Draw connections
@@ -112,7 +112,7 @@ export const InteractiveBackground = () => {
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
             const opacity = (1 - distance / maxDistance) * 0.3;
-            ctx.strokeStyle = `rgba(0, 0, 216, ${opacity})`;
+            ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
