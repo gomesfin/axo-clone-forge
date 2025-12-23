@@ -1,17 +1,20 @@
 import { Card } from "@/components/ui/card";
+import aauLogo from "@/assets/aau-logo.png";
+import wageningenLogo from "@/assets/wageningen-logo.png";
+import osuLogo from "@/assets/osu-logo.svg";
 
 const partners = [
   {
     name: "Addis Ababa University",
-    initials: "AAU",
+    logo: aauLogo,
   },
   {
     name: "Wageningen University",
-    initials: "WU",
+    logo: wageningenLogo,
   },
   {
     name: "Ohio State University",
-    initials: "OSU",
+    logo: osuLogo,
   },
 ];
 
@@ -35,10 +38,12 @@ export const Partners = () => {
               className="group p-6 bg-gradient-card border-2 border-border hover:border-primary/50 hover:shadow-glow transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center justify-center"
             >
               <div className="flex flex-col items-center text-center space-y-3">
-                <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                  <span className="text-2xl font-bold" style={{ color: 'black' }}>
-                    {partner.initials}
-                  </span>
+                <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center group-hover:scale-110 transition-all duration-300 overflow-hidden p-2">
+                  <img 
+                    src={partner.logo} 
+                    alt={`${partner.name} logo`}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <h3 className="text-lg font-bold group-hover:text-primary transition-colors duration-300 max-w-[150px]" style={{ color: 'black' }}>
                   {partner.name}
