@@ -20,7 +20,7 @@ const partners = [
 
 export const Partners = () => {
   return (
-    <section id="partners" className="pt-36 pb-20" style={{ backgroundColor: '#e6e6e6' }}>
+    <section id="partners" className="pt-36 pb-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-4 mb-4">
@@ -39,8 +39,8 @@ export const Partners = () => {
             >
               <div className="flex flex-col items-center text-center space-y-3">
                 <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center group-hover:scale-110 transition-all duration-300 overflow-hidden p-2">
-                  <img 
-                    src={partner.logo} 
+                  <img
+                    src={partner.logo}
                     alt={`${partner.name} logo`}
                     className="w-full h-full object-contain"
                   />

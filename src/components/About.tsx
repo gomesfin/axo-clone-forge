@@ -13,7 +13,7 @@ const aboutItems = [
 
 export const About = () => {
   return (
-    <section id="about" className="pt-36 pb-20" style={{ backgroundColor: '#e6e6e6' }}>
+    <section id="about" className="pt-36 pb-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-4 mb-4">
