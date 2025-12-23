@@ -97,7 +97,7 @@ export const InteractiveBackground = () => {
         // Draw particle
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, 0.6)`;
+        ctx.fillStyle = `rgba(157, 157, 255, 0.6)`;
         ctx.fill();
 
         // Draw connections
@@ -112,7 +112,7 @@ export const InteractiveBackground = () => {
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
             const opacity = (1 - distance / maxDistance) * 0.3;
-            ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
+            ctx.strokeStyle = `rgba(157, 157, 255, ${opacity})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
