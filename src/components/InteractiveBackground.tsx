@@ -35,8 +35,8 @@ export const InteractiveBackground = () => {
         y: Math.random() * canvas.height,
         baseX: Math.random() * canvas.width,
         baseY: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.15,
-        vy: (Math.random() - 0.5) * 0.15,
+        vx: (Math.random() - 0.5) * 0.225,
+        vy: (Math.random() - 0.5) * 0.225,
         size: Math.random() * 1.5 + 1,
       }));
     };
@@ -55,9 +55,9 @@ export const InteractiveBackground = () => {
 
       particles.current.forEach((particle, i) => {
         // Smooth, slow sinusoidal movement
-        const time = Date.now() * 0.0003;
-        particle.vx += Math.sin(time + i * 0.5) * 0.008;
-        particle.vy += Math.cos(time + i * 0.3) * 0.008;
+        const time = Date.now() * 0.00045;
+        particle.vx += Math.sin(time + i * 0.5) * 0.012;
+        particle.vy += Math.cos(time + i * 0.3) * 0.012;
 
         // Subtle mouse interaction
         const dx = mouse.current.x - particle.x;
