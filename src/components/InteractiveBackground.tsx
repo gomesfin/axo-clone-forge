@@ -29,7 +29,7 @@ export const InteractiveBackground = () => {
       canvas.height = window.innerHeight;
       
       // Reinitialize particles on resize
-      const particleCount = Math.floor((canvas.width * canvas.height) / 15000);
+      const particleCount = Math.floor((canvas.width * canvas.height) / 12500);
       particles.current = Array.from({ length: particleCount }, () => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
