@@ -96,4 +96,15 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-albert-sans;
     font-weight: 500;
   }
+
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  section {
+    scroll-snap-align: start;
+    scroll-margin-top: 4rem;
+    /* Optional: adds offset for sticky header if needed, adjust as per header height */
+  }
 }
